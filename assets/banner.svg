@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d0f"/>
+      <stop offset="55%" stop-color="#12181a"/>
+      <stop offset="100%" stop-color="#1a2420"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#ff6a1a" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ff6a1a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff6a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#ff3d1a"/>
+    </linearGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd9c2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- grid floor -->
+  <g stroke="#2c3a3a" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="340" x2="1200" y2="340"/>
+    <line x1="100" y1="280" x2="20" y2="360"/>
+    <line x1="260" y1="280" x2="200" y2="360"/>
+    <line x1="420" y1="280" x2="380" y2="360"/>
+    <line x1="580" y1="280" x2="560" y2="360"/>
+    <line x1="740" y1="280" x2="740" y2="360"/>
+    <line x1="900" y1="280" x2="920" y2="360"/>
+    <line x1="1060" y1="280" x2="1100" y2="360"/>
+  </g>
+
+  <!-- distant tactical HUD elements top right -->
+  <g opacity="0.5">
+    <circle cx="960" cy="90" r="120" fill="none" stroke="#ff6a1a" stroke-width="1"/>
+    <circle cx="960" cy="90" r="90" fill="none" stroke="#ff6a1a" stroke-width="1" opacity="0.6"/>
+    <circle cx="960" cy="90" r="60" fill="none" stroke="#ff6a1a" stroke-width="1" opacity="0.4"/>
+    <line x1="840" y1="90" x2="1080" y2="90" stroke="#ff6a1a" stroke-width="1" opacity="0.5"/>
+    <line x1="960" y1="-30" x2="960" y2="210" stroke="#ff6a1a" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- crosshair emblem -->
+  <g transform="translate(1005,90)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#ffb37a" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="6" fill="#ff8a3d"/>
+    <line x1="-52" y1="0" x2="-42" y2="0" stroke="#ffb37a" stroke-width="3"/>
+    <line x1="42" y1="0" x2="52" y2="0" stroke="#ffb37a" stroke-width="3"/>
+    <line x1="0" y1="-52" x2="0" y2="-42" stroke="#ffb37a" stroke-width="3"/>
+    <line x1="0" y1="42" x2="0" y2="52" stroke="#ffb37a" stroke-width="3"/>
+    <polygon points="0,-18 6,0 0,18 -6,0" fill="#ff3d1a" opacity="0.9"/>
+  </g>
+
+  <!-- small target boxes -->
+  <g stroke="#ff8a3d" stroke-width="1.5" fill="none" opacity="0.7">
+    <rect x="830" y="180" width="46" height="60" rx="3"/>
+    <line x1="853" y1="180" x2="853" y2="192" opacity="0.6"/>
+    <rect x="1080" y="200" width="34" height="46" rx="3" opacity="0.55"/>
+  </g>
+
+  <!-- angular accent shapes -->
+  <polygon points="0,360 260,360 160,220 0,220" fill="#0e1414" opacity="0.7"/>
+  <polygon points="0,360 260,360 200,300 0,300" fill="#ff6a1a" opacity="0.12"/>
+  <polygon points="60,40 640,40 610,64 60,64" fill="#ff6a1a" opacity="0.06"/>
+
+  <!-- accent bar above headline -->
+  <rect x="60" y="118" width="120" height="6" fill="url(#barGrad)"/>
+  <rect x="190" y="118" width="26" height="6" fill="#ff8a3d" opacity="0.6"/>
+
+  <!-- headline -->
+  <text x="60" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="700" fill="url(#textGlow)" textLength="900" lengthAdjust="spacingAndGlyphs">
+    Battlefield 2042 Softaim
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="240" font-family="'Segoe UI', Arial, sans-serif" fill="#c9d6d2" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="23.9">
+    Delivers lightweight Battlefield 2042 softaim with built-in aim smoothing
+  </text>
+  <text x="60" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9fb0ab" opacity="0.85">
+    — single binary
+  </text>
+
+  <!-- corner tick marks like HUD -->
+  <g stroke="#ff8a3d" stroke-width="2" opacity="0.6">
+    <line x1="60" y1="60" x2="60" y2="40"/>
+    <line x1="60" y1="40" x2="82" y2="40"/>
+    <line x1="1140" y1="60" x2="1140" y2="40"/>
+    <line x1="1140" y1="40" x2="1118" y2="40"/>
+    <line x1="60" y1="300" x2="60" y2="320"/>
+    <line x1="60" y1="320" x2="82" y2="320"/>
+    <line x1="1140" y1="300" x2="1140" y2="320"/>
+    <line x1="1140" y1="320" x2="1118" y2="320"/>
+  </g>
+</svg>
